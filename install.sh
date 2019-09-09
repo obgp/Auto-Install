@@ -5,7 +5,7 @@ dobrodosli() {
 	echo "CENTOS 7 MINIMAL INSTALACIJA, AKO JE VEC INSTALIRAN LAMP OBRISATI!"
     	echo "- 1 -  Update Masine"
 	echo "- 2 -  Podesavanje masine i instalacija panela"
-	echo "- 3 -  Podesavanje masine i instalacija panela"
+	echo "- 3 -  Podesavanje masine"
 	read -p "Odaberi opciju:" case
 	case $case in
 		1) update;;
