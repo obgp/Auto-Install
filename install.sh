@@ -1,24 +1,22 @@
 #!/bin/sh
-dobrodosli {
-	Info "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
-	log_t "Dobrodosli u OBGP installer"
-	log_t "CENTOS 7 MINIMAL INSTALACIJA, AKO JE VEC INSTALIRAN LAMP OBRISATI!"
-    Info "- 1  -  Update Masine"
-	Info "- 2  -  Podesavanje masine i instalacija panela"
-	log_s
-	Info
+dobrodosli() {
+	echo "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
+	echo "Dobrodosli u OBGP installer"
+	echo "CENTOS 7 MINIMAL INSTALACIJA, AKO JE VEC INSTALIRAN LAMP OBRISATI!"
+    	echo "- 1 -  Update Masine"
+	echo "- 2 -  Podesavanje masine i instalacija panela"
 	read -p "Odaberi opciju:" case
 	case $case in
 		1) update;;
 		2) setup;;
 	esac
-	Info "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
+	echo "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
 
 }
 update()
 {
 yum update -y;yum upgrade -y;
-log_t "Uspesno ste update masinu"
+echo "Uspesno ste update masinu"
 }
 setup()
 {
