@@ -20,7 +20,7 @@ yum update -y;yum upgrade -y;rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY*;yum inst
 systemctl start pure-ftpd;yum install  make gcc  libssh2  php-devel php-pear libssh2-1-dev -y;pecl install ssh2-alpha;echo "extension=ssh2.so" >  /etc/php.d/ssh2.ini;echo "extension=ssh2.so"  > /etc/php.ini;service restart httpd.service;yum install screen -y;groupadd gameservers;echo "DenyGroups gameservers" > /etc/ssh/sshd_config;yum install git -y;cd /var/www/html;rm -rf *;git clone https://github.com/obgp/OpenBalkanGamePanel/;cd OpenBalkanGamePanel/;mv * /var/www/html/;cd /var/www/html/;rm -rf OpenBalkanGamePanel;yum install glibc.i686 libstdc++.i686 -y;yum install java-1.8.0-openjdk -y;rpmkeys --import "http://pool.sks-keyservers.net/pks/lookup?op=get&search=0x3fa7e0328081bff6a14da29aa6a19b38d3d831ef";su -c 'curl https://download.mono-project.com/repo/centos7-stable.repo | tee /etc/yum.repos.d/mono-centos7-stable.repo';yum install mono-complete -y;
 clear;
 echo "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
-echo "Uspesno ste instalirali panel importujte bazu i u /var/www/html/core/inc/db.php editujte konekciju baze i u /var/www/html/admin/core/inc/db.php" 
+echo "Otvorite vasdomen.com/install/install.php da bi nastavili instalaciju panela!" 
 echo "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - "
 }
 setuponly() {
